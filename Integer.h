@@ -10,7 +10,7 @@ public:
     ~Integer(); //ya
     Integer operator=(const Integer& other); //ya
     Integer operator+(int n); //ya
-    explicit operator int(); //ya
+    operator int(); //ya
     friend std::ostream& operator <<(std::ostream& os, const Integer&); //ya
     friend std::istream& operator >>(std::istream& is, Integer&); //ya
 };
