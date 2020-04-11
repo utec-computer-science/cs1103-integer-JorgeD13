@@ -29,6 +29,11 @@ Integer Integer::operator+(int n){
 }
 
 
+Integer Integer::operator^(int n) {
+    return Integer(pow(this->value, n));
+}
+
+
 Integer::operator int() {
     return static_cast<int>(this->value);
 }
